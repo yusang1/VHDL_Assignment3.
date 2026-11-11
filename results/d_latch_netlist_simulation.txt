@@ -1,2 +1,0 @@
-/workspace/output/assignment3/tb/tb_d_latch.vhd:38:3:@60ns:(report note): PASS d_latch
-simulation stopped @60ns

@@ -1,7 +1,0 @@
-step,case,Q,expected,status
-1,Reset,0,0,PASS
-2,Hold reset,0,0,PASS
-3,Set,1,1,PASS
-4,Hold set,1,1,PASS
-5,Forbidden both outputs zero,0,0,PASS
-6,Recover by reset,0,0,PASS

@@ -1,6 +1,0 @@
-s=0,r=1	0	Reset	1
-s=0,r=0	0	Hold reset	1
-s=1,r=0	1	Set	0
-s=0,r=0	1	Hold set	0
-s=1,r=1	0	Forbidden both outputs zero	0
-s=0,r=1	0	Recover by reset	1

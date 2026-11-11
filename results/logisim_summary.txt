@@ -1,6 +1,0 @@
-PASS rs_latch (6 steps)
-PASS d_latch (6 steps)
-PASS d_ff (8 steps)
-PASS jk_ff (13 steps)
-PASS d_ff_async (17 steps)
-PASS: 48 expected-Q checks in actual Logisim engine

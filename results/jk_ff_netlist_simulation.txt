@@ -1,2 +1,0 @@
-/workspace/output/assignment3/tb/tb_jk_ff.vhd:73:3:@130ns:(report note): PASS jk_ff
-simulation stopped @130ns

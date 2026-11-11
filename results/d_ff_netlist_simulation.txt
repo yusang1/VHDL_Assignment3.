@@ -1,2 +1,0 @@
-/workspace/output/assignment3/tb/tb_d_ff.vhd:43:3:@80ns:(report note): PASS d_ff
-simulation stopped @80ns
