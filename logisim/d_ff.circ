@@ -1,250 +1,161 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project source="2.7.1" version="1.0">
-  <lib desc="#Wiring" name="0" />
-  <lib desc="#Gates" name="1" />
+  <lib name="0" desc="#Wiring" />
+  <lib name="1" desc="#Gates" />
+  <lib name="2" desc="#Base" />
   <main name="d_ff" />
   <circuit name="d_ff">
-    <comp lib="0" name="Pin" loc="(80,80)">
+    <comp lib="1" name="NAND Gate" loc="(400,200)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(240,340)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(400,400)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(660,200)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(660,400)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(1300,200)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(1140,340)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(1300,400)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(1560,200)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NAND Gate" loc="(1560,400)">
+      <a name="size" val="30" />
+      <a name="inputs" val="2" />
+    </comp>
+    <comp lib="1" name="NOT Gate" loc="(400,650)">
+      <a name="size" val="30" />
+    </comp>
+    <comp lib="0" name="Pin" loc="(100,190)">
       <a name="label" val="d" />
       <a name="facing" val="east" />
     </comp>
-    <wire from="(80,80)" to="(120,80)" />
-    <comp lib="0" name="Tunnel" loc="(120,80)">
-      <a name="label" val="d" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="0" name="Pin" loc="(80,130)">
+    <comp lib="0" name="Pin" loc="(100,650)">
       <a name="label" val="clk" />
       <a name="facing" val="east" />
     </comp>
-    <wire from="(80,130)" to="(120,130)" />
-    <comp lib="0" name="Tunnel" loc="(120,130)">
-      <a name="label" val="clk" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="0" name="Pin" loc="(80,180)">
+    <comp lib="0" name="Pin" loc="(1750,200)">
       <a name="label" val="q" />
-      <a name="facing" val="east" />
+      <a name="facing" val="west" />
       <a name="output" val="true" />
     </comp>
-    <wire from="(80,180)" to="(120,180)" />
-    <comp lib="0" name="Tunnel" loc="(120,180)">
-      <a name="label" val="q" />
-      <a name="facing" val="west" />
+    <comp lib="2" name="Text" loc="(100,60)">
+      <a name="text" val="MASTER: enabled when clk = 0" />
+      <a name="font" val="SansSerif bold 16" />
+      <a name="halign" val="left" />
     </comp>
-    <comp lib="1" name="NOT Gate" loc="(420,80)">
-      <a name="size" val="30" />
-      <a name="label" val="nc" />
+    <comp lib="2" name="Text" loc="(1000,60)">
+      <a name="text" val="SLAVE: enabled when clk = 1" />
+      <a name="font" val="SansSerif bold 16" />
+      <a name="halign" val="left" />
     </comp>
-    <wire from="(350,80)" to="(390,80)" />
-    <comp lib="0" name="Tunnel" loc="(350,80)">
-      <a name="label" val="clk" />
-      <a name="facing" val="east" />
+    <comp lib="2" name="Text" loc="(310,610)">
+      <a name="text" val="Clock inverter" />
+      <a name="font" val="SansSerif bold 16" />
+      <a name="halign" val="left" />
     </comp>
-    <wire from="(420,80)" to="(450,80)" />
-    <comp lib="0" name="Tunnel" loc="(450,80)">
-      <a name="label" val="nc" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(420,180)">
-      <a name="size" val="30" />
-      <a name="label" val="m_s" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(340,170)" to="(380,170)" />
-    <comp lib="0" name="Tunnel" loc="(340,170)">
-      <a name="label" val="d" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(340,190)" to="(380,190)" />
-    <comp lib="0" name="Tunnel" loc="(340,190)">
-      <a name="label" val="nc" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(420,180)" to="(450,180)" />
-    <comp lib="0" name="Tunnel" loc="(450,180)">
-      <a name="label" val="m_s" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(420,280)">
-      <a name="size" val="30" />
-      <a name="label" val="m_nd" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(340,270)" to="(380,270)" />
-    <comp lib="0" name="Tunnel" loc="(340,270)">
-      <a name="label" val="d" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(340,290)" to="(380,290)" />
-    <comp lib="0" name="Tunnel" loc="(340,290)">
-      <a name="label" val="d" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(420,280)" to="(450,280)" />
-    <comp lib="0" name="Tunnel" loc="(450,280)">
-      <a name="label" val="m_nd" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(420,380)">
-      <a name="size" val="30" />
-      <a name="label" val="m_r" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(340,370)" to="(380,370)" />
-    <comp lib="0" name="Tunnel" loc="(340,370)">
-      <a name="label" val="m_nd" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(340,390)" to="(380,390)" />
-    <comp lib="0" name="Tunnel" loc="(340,390)">
-      <a name="label" val="nc" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(420,380)" to="(450,380)" />
-    <comp lib="0" name="Tunnel" loc="(450,380)">
-      <a name="label" val="m_r" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(420,480)">
-      <a name="size" val="30" />
-      <a name="label" val="m" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(340,470)" to="(380,470)" />
-    <comp lib="0" name="Tunnel" loc="(340,470)">
-      <a name="label" val="m_s" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(340,490)" to="(380,490)" />
-    <comp lib="0" name="Tunnel" loc="(340,490)">
-      <a name="label" val="mn" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(420,480)" to="(450,480)" />
-    <comp lib="0" name="Tunnel" loc="(450,480)">
-      <a name="label" val="m" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(420,580)">
-      <a name="size" val="30" />
-      <a name="label" val="mn" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(340,570)" to="(380,570)" />
-    <comp lib="0" name="Tunnel" loc="(340,570)">
-      <a name="label" val="m_r" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(340,590)" to="(380,590)" />
-    <comp lib="0" name="Tunnel" loc="(340,590)">
-      <a name="label" val="m" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(420,580)" to="(450,580)" />
-    <comp lib="0" name="Tunnel" loc="(450,580)">
-      <a name="label" val="mn" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(720,80)">
-      <a name="size" val="30" />
-      <a name="label" val="s_s" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(640,70)" to="(680,70)" />
-    <comp lib="0" name="Tunnel" loc="(640,70)">
-      <a name="label" val="m" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(640,90)" to="(680,90)" />
-    <comp lib="0" name="Tunnel" loc="(640,90)">
-      <a name="label" val="clk" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(720,80)" to="(750,80)" />
-    <comp lib="0" name="Tunnel" loc="(750,80)">
-      <a name="label" val="s_s" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(720,180)">
-      <a name="size" val="30" />
-      <a name="label" val="s_nd" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(640,170)" to="(680,170)" />
-    <comp lib="0" name="Tunnel" loc="(640,170)">
-      <a name="label" val="m" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(640,190)" to="(680,190)" />
-    <comp lib="0" name="Tunnel" loc="(640,190)">
-      <a name="label" val="m" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(720,180)" to="(750,180)" />
-    <comp lib="0" name="Tunnel" loc="(750,180)">
-      <a name="label" val="s_nd" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(720,280)">
-      <a name="size" val="30" />
-      <a name="label" val="s_r" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(640,270)" to="(680,270)" />
-    <comp lib="0" name="Tunnel" loc="(640,270)">
-      <a name="label" val="s_nd" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(640,290)" to="(680,290)" />
-    <comp lib="0" name="Tunnel" loc="(640,290)">
-      <a name="label" val="clk" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(720,280)" to="(750,280)" />
-    <comp lib="0" name="Tunnel" loc="(750,280)">
-      <a name="label" val="s_r" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(720,380)">
-      <a name="size" val="30" />
-      <a name="label" val="q" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(640,370)" to="(680,370)" />
-    <comp lib="0" name="Tunnel" loc="(640,370)">
-      <a name="label" val="s_s" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(640,390)" to="(680,390)" />
-    <comp lib="0" name="Tunnel" loc="(640,390)">
-      <a name="label" val="qn" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(720,380)" to="(750,380)" />
-    <comp lib="0" name="Tunnel" loc="(750,380)">
-      <a name="label" val="q" />
-      <a name="facing" val="west" />
-    </comp>
-    <comp lib="1" name="NAND Gate" loc="(720,480)">
-      <a name="size" val="30" />
-      <a name="label" val="qn" />
-      <a name="inputs" val="2" />
-    </comp>
-    <wire from="(640,470)" to="(680,470)" />
-    <comp lib="0" name="Tunnel" loc="(640,470)">
-      <a name="label" val="s_r" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(640,490)" to="(680,490)" />
-    <comp lib="0" name="Tunnel" loc="(640,490)">
-      <a name="label" val="q" />
-      <a name="facing" val="east" />
-    </comp>
-    <wire from="(720,480)" to="(750,480)" />
-    <comp lib="0" name="Tunnel" loc="(750,480)">
-      <a name="label" val="qn" />
-      <a name="facing" val="west" />
-    </comp>
+    <wire from="(70,460)" to="(70,560)" />
+    <wire from="(70,460)" to="(100,460)" />
+    <wire from="(70,560)" to="(500,560)" />
+    <wire from="(100,190)" to="(160,190)" />
+    <wire from="(100,460)" to="(340,460)" />
+    <wire from="(100,650)" to="(200,650)" />
+    <wire from="(160,190)" to="(160,340)" />
+    <wire from="(160,190)" to="(360,190)" />
+    <wire from="(160,340)" to="(180,340)" />
+    <wire from="(180,330)" to="(180,340)" />
+    <wire from="(180,330)" to="(200,330)" />
+    <wire from="(180,340)" to="(180,350)" />
+    <wire from="(180,350)" to="(200,350)" />
+    <wire from="(200,650)" to="(200,740)" />
+    <wire from="(200,650)" to="(370,650)" />
+    <wire from="(200,740)" to="(970,740)" />
+    <wire from="(240,340)" to="(300,340)" />
+    <wire from="(300,340)" to="(300,390)" />
+    <wire from="(300,390)" to="(360,390)" />
+    <wire from="(340,210)" to="(340,410)" />
+    <wire from="(340,210)" to="(360,210)" />
+    <wire from="(340,410)" to="(340,460)" />
+    <wire from="(340,410)" to="(360,410)" />
+    <wire from="(400,200)" to="(520,200)" />
+    <wire from="(400,400)" to="(520,400)" />
+    <wire from="(400,650)" to="(500,650)" />
+    <wire from="(500,560)" to="(500,650)" />
+    <wire from="(520,190)" to="(520,200)" />
+    <wire from="(520,190)" to="(620,190)" />
+    <wire from="(520,400)" to="(520,410)" />
+    <wire from="(520,410)" to="(620,410)" />
+    <wire from="(560,280)" to="(560,390)" />
+    <wire from="(560,280)" to="(700,280)" />
+    <wire from="(560,390)" to="(620,390)" />
+    <wire from="(580,210)" to="(580,320)" />
+    <wire from="(580,210)" to="(620,210)" />
+    <wire from="(580,320)" to="(740,320)" />
+    <wire from="(660,200)" to="(700,200)" />
+    <wire from="(660,400)" to="(740,400)" />
+    <wire from="(700,200)" to="(700,280)" />
+    <wire from="(700,200)" to="(780,200)" />
+    <wire from="(740,320)" to="(740,400)" />
+    <wire from="(780,200)" to="(850,200)" />
+    <wire from="(850,190)" to="(850,200)" />
+    <wire from="(850,190)" to="(1000,190)" />
+    <wire from="(970,460)" to="(970,740)" />
+    <wire from="(970,460)" to="(1000,460)" />
+    <wire from="(1000,190)" to="(1060,190)" />
+    <wire from="(1000,460)" to="(1240,460)" />
+    <wire from="(1060,190)" to="(1060,340)" />
+    <wire from="(1060,190)" to="(1260,190)" />
+    <wire from="(1060,340)" to="(1080,340)" />
+    <wire from="(1080,330)" to="(1080,340)" />
+    <wire from="(1080,330)" to="(1100,330)" />
+    <wire from="(1080,340)" to="(1080,350)" />
+    <wire from="(1080,350)" to="(1100,350)" />
+    <wire from="(1140,340)" to="(1200,340)" />
+    <wire from="(1200,340)" to="(1200,390)" />
+    <wire from="(1200,390)" to="(1260,390)" />
+    <wire from="(1240,210)" to="(1240,410)" />
+    <wire from="(1240,210)" to="(1260,210)" />
+    <wire from="(1240,410)" to="(1240,460)" />
+    <wire from="(1240,410)" to="(1260,410)" />
+    <wire from="(1300,200)" to="(1420,200)" />
+    <wire from="(1300,400)" to="(1420,400)" />
+    <wire from="(1420,190)" to="(1420,200)" />
+    <wire from="(1420,190)" to="(1520,190)" />
+    <wire from="(1420,400)" to="(1420,410)" />
+    <wire from="(1420,410)" to="(1520,410)" />
+    <wire from="(1460,280)" to="(1460,390)" />
+    <wire from="(1460,280)" to="(1600,280)" />
+    <wire from="(1460,390)" to="(1520,390)" />
+    <wire from="(1480,210)" to="(1480,320)" />
+    <wire from="(1480,210)" to="(1520,210)" />
+    <wire from="(1480,320)" to="(1640,320)" />
+    <wire from="(1560,200)" to="(1600,200)" />
+    <wire from="(1560,400)" to="(1640,400)" />
+    <wire from="(1600,200)" to="(1600,280)" />
+    <wire from="(1600,200)" to="(1680,200)" />
+    <wire from="(1640,320)" to="(1640,400)" />
+    <wire from="(1680,200)" to="(1750,200)" />
   </circuit>
 </project>
