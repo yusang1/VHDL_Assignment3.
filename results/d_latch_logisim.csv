@@ -1,0 +1,7 @@
+step,case,Q,expected,status
+1,Initialize,0,0,PASS
+2,Transparent high,1,1,PASS
+3,Transparent low,0,0,PASS
+4,Close,0,0,PASS
+5,Hold despite D change,0,0,PASS
+6,Reopen,1,1,PASS

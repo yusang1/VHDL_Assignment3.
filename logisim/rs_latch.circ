@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project source="2.7.1" version="1.0">
+  <lib desc="#Wiring" name="0" />
+  <lib desc="#Gates" name="1" />
+  <main name="rs_latch" />
+  <circuit name="rs_latch">
+    <comp lib="0" name="Pin" loc="(80,80)">
+      <a name="label" val="s" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(80,80)" to="(120,80)" />
+    <comp lib="0" name="Tunnel" loc="(120,80)">
+      <a name="label" val="s" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp lib="0" name="Pin" loc="(80,130)">
+      <a name="label" val="r" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(80,130)" to="(120,130)" />
+    <comp lib="0" name="Tunnel" loc="(120,130)">
+      <a name="label" val="r" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp lib="0" name="Pin" loc="(80,180)">
+      <a name="label" val="q" />
+      <a name="facing" val="east" />
+      <a name="output" val="true" />
+    </comp>
+    <wire from="(80,180)" to="(120,180)" />
+    <comp lib="0" name="Tunnel" loc="(120,180)">
+      <a name="label" val="q" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp lib="0" name="Pin" loc="(80,230)">
+      <a name="label" val="qn" />
+      <a name="facing" val="east" />
+      <a name="output" val="true" />
+    </comp>
+    <wire from="(80,230)" to="(120,230)" />
+    <comp lib="0" name="Tunnel" loc="(120,230)">
+      <a name="label" val="qn" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp lib="1" name="NOR Gate" loc="(420,80)">
+      <a name="size" val="30" />
+      <a name="label" val="q" />
+      <a name="inputs" val="2" />
+    </comp>
+    <wire from="(340,70)" to="(380,70)" />
+    <comp lib="0" name="Tunnel" loc="(340,70)">
+      <a name="label" val="r" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(340,90)" to="(380,90)" />
+    <comp lib="0" name="Tunnel" loc="(340,90)">
+      <a name="label" val="qn" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(420,80)" to="(450,80)" />
+    <comp lib="0" name="Tunnel" loc="(450,80)">
+      <a name="label" val="q" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp lib="1" name="NOR Gate" loc="(420,180)">
+      <a name="size" val="30" />
+      <a name="label" val="qn" />
+      <a name="inputs" val="2" />
+    </comp>
+    <wire from="(340,170)" to="(380,170)" />
+    <comp lib="0" name="Tunnel" loc="(340,170)">
+      <a name="label" val="s" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(340,190)" to="(380,190)" />
+    <comp lib="0" name="Tunnel" loc="(340,190)">
+      <a name="label" val="q" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(420,180)" to="(450,180)" />
+    <comp lib="0" name="Tunnel" loc="(450,180)">
+      <a name="label" val="qn" />
+      <a name="facing" val="west" />
+    </comp>
+  </circuit>
+</project>

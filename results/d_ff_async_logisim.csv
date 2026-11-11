@@ -1,0 +1,18 @@
+step,case,Q,expected,status
+1,Async clear low clock,0,0,PASS
+2,Release clear,0,0,PASS
+3,Async set low clock,1,1,PASS
+4,Clear priority both active,0,0,PASS
+5,Set remains asserted,1,1,PASS
+6,Release set,1,1,PASS
+7,Normal capture zero,0,0,PASS
+8,High phase data hold,0,0,PASS
+9,Async set high clock,1,1,PASS
+10,Clear priority high clock,0,0,PASS
+11,Release controls high clock,0,0,PASS
+12,Falling hold,0,0,PASS
+13,Normal capture one,1,1,PASS
+14,Async clear high clock,0,0,PASS
+15,Release clear high clock,0,0,PASS
+16,Prepare zero,0,0,PASS
+17,Capture zero again,0,0,PASS

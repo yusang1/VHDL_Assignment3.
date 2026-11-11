@@ -1,0 +1,9 @@
+step,case,Q,expected,status
+1,Initialize low phase,E,-,PASS
+2,Rising capture zero,0,0,PASS
+3,High phase hold,0,0,PASS
+4,Falling edge hold,0,0,PASS
+5,Rising capture one,1,1,PASS
+6,High phase hold one,1,1,PASS
+7,Falling hold one,1,1,PASS
+8,Rising capture zero,0,0,PASS

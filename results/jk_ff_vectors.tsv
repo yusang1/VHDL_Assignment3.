@@ -1,0 +1,13 @@
+j=0,k=1,clk=0	-	Prepare reset
+clk=1	0	Reset
+clk=0,j=0,k=0	0	Prepare hold
+clk=1	0	Hold zero
+clk=0,j=1,k=0	0	Prepare set
+clk=1	1	Set
+clk=0,j=0,k=0	1	Prepare hold one
+clk=1	1	Hold one
+clk=0,j=1,k=1	1	Prepare toggle
+clk=1	0	Toggle to zero
+clk=0	0	Falling hold
+clk=1	1	Toggle to one
+j=0,k=1	1	High phase hold

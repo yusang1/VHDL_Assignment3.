@@ -1,0 +1,14 @@
+step,case,Q,expected,status
+1,Prepare reset,E,-,PASS
+2,Reset,0,0,PASS
+3,Prepare hold,0,0,PASS
+4,Hold zero,0,0,PASS
+5,Prepare set,0,0,PASS
+6,Set,1,1,PASS
+7,Prepare hold one,1,1,PASS
+8,Hold one,1,1,PASS
+9,Prepare toggle,1,1,PASS
+10,Toggle to zero,0,0,PASS
+11,Falling hold,0,0,PASS
+12,Toggle to one,1,1,PASS
+13,High phase hold,1,1,PASS

@@ -1,0 +1,6 @@
+d=0,en=1	0	Initialize
+d=1,en=1	1	Transparent high
+d=0,en=1	0	Transparent low
+en=0	0	Close
+d=1	0	Hold despite D change
+en=1	1	Reopen

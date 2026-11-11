@@ -1,0 +1,72 @@
+$date
+  Wed Nov 11 08:15:11 2026
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module env $end
+$upscope $end
+$scope module tb_rs_latch $end
+$var reg 1 ! s $end
+$var reg 1 " r $end
+$var reg 1 # q $end
+$var reg 1 $ qn $end
+$scope module uut $end
+$var reg 1 % s $end
+$var reg 1 & r $end
+$var reg 1 ' q $end
+$var reg 1 ( qn $end
+$var reg 1 ) qi $end
+$var reg 1 * qni $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+1$
+0%
+1&
+0'
+1(
+0)
+1*
+#10000000
+0"
+0&
+#20000000
+1!
+1#
+0$
+1%
+1'
+0(
+1)
+0*
+#30000000
+0!
+0%
+#40000000
+1!
+1"
+0#
+1%
+1&
+0'
+0)
+#50000000
+0!
+1$
+0%
+1(
+1*

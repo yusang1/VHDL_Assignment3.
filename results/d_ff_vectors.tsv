@@ -1,0 +1,8 @@
+clk=0,d=0	-	Initialize low phase
+clk=1	0	Rising capture zero
+d=1	0	High phase hold
+clk=0	0	Falling edge hold
+clk=1	1	Rising capture one
+d=0	1	High phase hold one
+clk=0	1	Falling hold one
+clk=1	0	Rising capture zero

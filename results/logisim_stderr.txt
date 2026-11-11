@@ -1,0 +1,10 @@
+Nov 11, 2026 8:17:10 AM java.util.prefs.FileSystemPreferences$1 run
+WARNING: Couldn't create user preferences directory. User preferences are unusable.
+Nov 11, 2026 8:17:10 AM java.util.prefs.FileSystemPreferences$1 run
+WARNING: java.io.IOException: No such file or directory
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Nov 11, 2026 8:17:14 AM java.util.prefs.FileSystemPreferences checkLockFile0ErrorCode
+WARNING: Could not lock User prefs.  Unix error code 2.
+Nov 11, 2026 8:17:14 AM java.util.prefs.FileSystemPreferences syncWorld
+WARNING: Couldn't flush user prefs: java.util.prefs.BackingStoreException: Couldn't get file lock.
