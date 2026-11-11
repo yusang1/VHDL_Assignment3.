@@ -4,6 +4,23 @@
   <lib name="1" desc="#Gates" />
   <lib name="2" desc="#Base" />
   <main name="d_ff" />
+  <mappings>
+    <tool lib="2" name="Poke Tool" map="Button2" />
+    <tool lib="2" name="Menu Tool" map="Button3" />
+    <tool lib="2" name="Menu Tool" map="Ctrl Button1" />
+  </mappings>
+  <toolbar>
+    <tool lib="2" name="Poke Tool" />
+    <tool lib="2" name="Edit Tool" />
+    <tool lib="2" name="Text Tool" />
+    <sep />
+    <tool lib="0" name="Pin" />
+    <tool lib="1" name="NOT Gate" />
+    <tool lib="1" name="NAND Gate" />
+    <tool lib="1" name="NOR Gate" />
+    <tool lib="1" name="AND Gate" />
+    <tool lib="1" name="OR Gate" />
+  </toolbar>
   <circuit name="d_ff">
     <comp lib="1" name="NAND Gate" loc="(400,200)">
       <a name="size" val="30" />
