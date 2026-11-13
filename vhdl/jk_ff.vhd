@@ -1,13 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 entity jk_ff is
-  port(j, k, clk: in std_logic; q: out std_logic);
+  port(j, k, clk, clr_n: in std_logic; q: out std_logic);
 end entity;
 architecture rtl of jk_ff is
 signal qi: std_logic;
 begin
-  process(clk) begin
-    if rising_edge(clk) then
+  process(clk, clr_n) begin
+    if clr_n = '0' then
+      qi <= '0';
+    elsif rising_edge(clk) then
       case j & k is
         when "00" => null;
         when "01" => qi <= '0';
